@@ -1,0 +1,1818 @@
+DEBUG - 2026-05-13 01:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 01:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 01:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 01:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 01:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 01:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 01:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-13 02:17:28 --> ErrorException: Undefined array key "pengalaman"
+[Method: GET, Route: pelamar]
+in APPPATH\Views\pelamar\index.php on line 19.
+ 1 APPPATH\Views\pelamar\index.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pengalaman"', 'C:\\xampp\\htdocs\\ci4\\app\\Views\\pelamar\\index.php', 19)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\ci4\\app\\Views\\pelamar\\index.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pelamar/index', [], true)
+ 5 APPPATH\Controllers\Pelamar.php(124): view('pelamar/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-13 02:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:56:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:56:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 02:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-13 03:30:41 --> Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 5 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:30:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lamaran.id_lamaran' in 'order clause'
+[Method: GET, Route: pelamar]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 2 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:30:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 4 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:30:41 --> [Caused by] mysqli_sql_exception: Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 5 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-05-13 03:31:55 --> Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`status_terakhir` = \'diterima\'
+ORDER BY `lamaran`.`id_lamaran` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`status_terakhir` = \'diterima\'
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`status_terakhir` = \'diterima\'
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`status_terakhir` = :lamaran.status_terakhir:
+ORDER BY `lamaran`.`id_lamaran` DESC', [...], false)
+ 5 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:31:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lamaran.id_lamaran' in 'order clause'
+[Method: GET, Route: pelamar]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`status_terakhir` = :lamaran.status_terakhir:
+ORDER BY `lamaran`.`id_lamaran` DESC', [...], false)
+ 2 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:31:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`status_terakhir` = \'diterima\'
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`status_terakhir` = \'diterima\'
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`status_terakhir` = :lamaran.status_terakhir:
+ORDER BY `lamaran`.`id_lamaran` DESC', [...], false)
+ 4 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:31:55 --> [Caused by] mysqli_sql_exception: Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`status_terakhir` = \'diterima\'
+ORDER BY `lamaran`.`id_lamaran` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`status_terakhir` = \'diterima\'
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`status_terakhir` = \'diterima\'
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`status_terakhir` = :lamaran.status_terakhir:
+ORDER BY `lamaran`.`id_lamaran` DESC', [...], false)
+ 5 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-05-13 03:31:56 --> Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 5 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:31:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lamaran.id_lamaran' in 'order clause'
+[Method: GET, Route: pelamar]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 2 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:31:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 4 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:31:56 --> [Caused by] mysqli_sql_exception: Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 5 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-05-13 03:31:59 --> Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 5 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:31:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lamaran.id_lamaran' in 'order clause'
+[Method: GET, Route: pelamar]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 2 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:31:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 4 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:31:59 --> [Caused by] mysqli_sql_exception: Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 5 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-13 03:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 03:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-13 03:32:10 --> Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 5 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:32:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lamaran.id_lamaran' in 'order clause'
+[Method: GET, Route: pelamar]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 2 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:32:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 4 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:32:10 --> [Caused by] mysqli_sql_exception: Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 5 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-05-13 03:52:50 --> Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 5 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:52:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lamaran.id_lamaran' in 'order clause'
+[Method: GET, Route: pelamar]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 2 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:52:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 4 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:52:50 --> [Caused by] mysqli_sql_exception: Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 5 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-13 03:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 03:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 03:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-13 03:53:04 --> Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 5 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:53:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lamaran.id_lamaran' in 'order clause'
+[Method: GET, Route: pelamar]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 2 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:53:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 4 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:53:04 --> [Caused by] mysqli_sql_exception: Unknown column 'lamaran.id_lamaran' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `pelamar`.`nama_pelamar`, `pelamar`.`email`, `pelamar`.`pendidikan`, `lowongan`.`nama_pekerjaan`
+FROM `lamaran`
+JOIN `pelamar` ON `pelamar`.`id_pelamar` = `lamaran`.`id_pelamar`
+JOIN `lowongan` ON `lowongan`.`id` = `lamaran`.`id_lowongan`
+ORDER BY `lamaran`.`id_lamaran` DESC', [], false)
+ 5 APPPATH\Controllers\Pelamar.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 03:56:47 --> ErrorException: Undefined array key "tanggal_lamar"
+[Method: GET, Route: pelamar]
+in APPPATH\Views\pelamar\index.php on line 273.
+ 1 APPPATH\Views\pelamar\index.php(273): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tanggal_lamar"', 'C:\\xampp\\htdocs\\ci4\\app\\Views\\pelamar\\index.php', 273)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\ci4\\app\\Views\\pelamar\\index.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pelamar/index', [], true)
+ 5 APPPATH\Controllers\Pelamar.php(196): view('pelamar/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pelamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelamar))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-13 04:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 04:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 04:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 04:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 04:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-13 04:01:44 --> Unknown column 'status_lamaran' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `lamaran` SET `status_lamaran` = \'wawancara\'
+WHERE `id_lamaran` = \'14\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `lamaran` SET `status_lamaran` = \'wawancara\'
+WHERE `id_lamaran` = \'14\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `lamaran` SET `status_lamaran` = \'wawancara\'
+WHERE `id_lamaran` = \'14\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `lamaran` SET `status_lamaran` = :status_lamaran:
+WHERE `id_lamaran` = :id_lamaran:', [...], false)
+ 5 APPPATH\Controllers\Lamaran.php(97): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->updateTahap('14')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 04:01:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status_lamaran' in 'field list'
+[Method: POST, Route: lamaran/updateTahap/14]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `lamaran` SET `status_lamaran` = :status_lamaran:
+WHERE `id_lamaran` = :id_lamaran:', [...], false)
+ 2 APPPATH\Controllers\Lamaran.php(97): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->updateTahap('14')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 04:01:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status_lamaran' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `lamaran` SET `status_lamaran` = \'wawancara\'
+WHERE `id_lamaran` = \'14\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `lamaran` SET `status_lamaran` = \'wawancara\'
+WHERE `id_lamaran` = \'14\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `lamaran` SET `status_lamaran` = :status_lamaran:
+WHERE `id_lamaran` = :id_lamaran:', [...], false)
+ 4 APPPATH\Controllers\Lamaran.php(97): CodeIgniter\Database\BaseBuilder->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->updateTahap('14')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 04:01:44 --> [Caused by] mysqli_sql_exception: Unknown column 'status_lamaran' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `lamaran` SET `status_lamaran` = \'wawancara\'
+WHERE `id_lamaran` = \'14\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `lamaran` SET `status_lamaran` = \'wawancara\'
+WHERE `id_lamaran` = \'14\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `lamaran` SET `status_lamaran` = \'wawancara\'
+WHERE `id_lamaran` = \'14\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `lamaran` SET `status_lamaran` = :status_lamaran:
+WHERE `id_lamaran` = :id_lamaran:', [...], false)
+ 5 APPPATH\Controllers\Lamaran.php(97): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->updateTahap('14')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-13 04:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-13 04:08:28 --> Unknown column 'status_lamaran' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `lamaran` SET `status_lamaran` = \'wawancara\'
+WHERE `id_lamaran` = \'14\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `lamaran` SET `status_lamaran` = \'wawancara\'
+WHERE `id_lamaran` = \'14\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `lamaran` SET `status_lamaran` = \'wawancara\'
+WHERE `id_lamaran` = \'14\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `lamaran` SET `status_lamaran` = :status_lamaran:
+WHERE `id_lamaran` = :id_lamaran:', [...], false)
+ 5 APPPATH\Controllers\Lamaran.php(97): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->updateTahap('14')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 04:08:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status_lamaran' in 'field list'
+[Method: POST, Route: lamaran/updateTahap/14]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `lamaran` SET `status_lamaran` = :status_lamaran:
+WHERE `id_lamaran` = :id_lamaran:', [...], false)
+ 2 APPPATH\Controllers\Lamaran.php(97): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->updateTahap('14')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 04:08:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status_lamaran' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `lamaran` SET `status_lamaran` = \'wawancara\'
+WHERE `id_lamaran` = \'14\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `lamaran` SET `status_lamaran` = \'wawancara\'
+WHERE `id_lamaran` = \'14\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `lamaran` SET `status_lamaran` = :status_lamaran:
+WHERE `id_lamaran` = :id_lamaran:', [...], false)
+ 4 APPPATH\Controllers\Lamaran.php(97): CodeIgniter\Database\BaseBuilder->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->updateTahap('14')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 04:08:28 --> [Caused by] mysqli_sql_exception: Unknown column 'status_lamaran' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `lamaran` SET `status_lamaran` = \'wawancara\'
+WHERE `id_lamaran` = \'14\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `lamaran` SET `status_lamaran` = \'wawancara\'
+WHERE `id_lamaran` = \'14\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `lamaran` SET `status_lamaran` = \'wawancara\'
+WHERE `id_lamaran` = \'14\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `lamaran` SET `status_lamaran` = :status_lamaran:
+WHERE `id_lamaran` = :id_lamaran:', [...], false)
+ 5 APPPATH\Controllers\Lamaran.php(97): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->updateTahap('14')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-13 04:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:19:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-13 07:19:46 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:19:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 2 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:19:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 4 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:19:46 --> [Caused by] mysqli_sql_exception: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-13 07:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-13 07:19:57 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:19:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 2 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:19:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 4 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:19:57 --> [Caused by] mysqli_sql_exception: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-13 07:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-13 07:20:17 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 2 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 4 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:17 --> [Caused by] mysqli_sql_exception: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-13 07:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-13 07:20:18 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 2 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 4 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:18 --> [Caused by] mysqli_sql_exception: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-13 07:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-13 07:20:19 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 2 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 4 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:19 --> [Caused by] mysqli_sql_exception: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-13 07:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-13 07:20:19 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 2 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 4 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:19 --> [Caused by] mysqli_sql_exception: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-13 07:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-13 07:20:20 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 2 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 4 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:20 --> [Caused by] mysqli_sql_exception: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-13 07:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-13 07:20:20 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 2 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 4 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:20 --> [Caused by] mysqli_sql_exception: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-13 07:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-13 07:20:30 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 2 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 4 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:20:30 --> [Caused by] mysqli_sql_exception: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = \'hired\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Dashboard.php(39): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-13 07:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 07:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-13 07:47:05 --> Unknown column 'l.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+        SELECT 
+        l.id as id_lamaran,
+        l.status,
+        p.nama_pelamar as nama,
+        k.id_kriteria,
+        k.bobot,
+        k.atribut,
+        pen.nilai
+        FROM lamaran l
+        JOIN pelamar p ON p.id_pelamar = l.id_pelamar
+        JOIN penilaian pen ON pen.id_lamaran = l.id
+        JOIN kriteria k ON k.id_kriteria = pen.id_kriteria
+        WHERE l.id_lowongan = 4
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+        l.id as id_lamaran,
+        l.status,
+        p.nama_pelamar as nama,
+        k.id_kriteria,
+        k.bobot,
+        k.atribut,
+        pen.nilai
+        FROM lamaran l
+        JOIN pelamar p ON p.id_pelamar = l.id_pelamar
+        JOIN penilaian pen ON pen.id_lamaran = l.id
+        JOIN kriteria k ON k.id_kriteria = pen.id_kriteria
+        WHERE l.id_lowongan = 4
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+        l.id as id_lamaran,
+        l.status,
+        p.nama_pelamar as nama,
+        k.id_kriteria,
+        k.bobot,
+        k.atribut,
+        pen.nilai
+        FROM lamaran l
+        JOIN pelamar p ON p.id_pelamar = l.id_pelamar
+        JOIN penilaian pen ON pen.id_lamaran = l.id
+        JOIN kriteria k ON k.id_kriteria = pen.id_kriteria
+        WHERE l.id_lowongan = 4
+        ')
+ 4 APPPATH\Controllers\Perhitungan.php(69): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+        l.id as id_lamaran,
+        l.status,
+        p.nama_pelamar as nama,
+        k.id_kriteria,
+        k.bobot,
+        k.atribut,
+        pen.nilai
+        FROM lamaran l
+        JOIN pelamar p ON p.id_pelamar = l.id_pelamar
+        JOIN penilaian pen ON pen.id_lamaran = l.id
+        JOIN kriteria k ON k.id_kriteria = pen.id_kriteria
+        WHERE l.id_lowongan = 4
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index('4')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:47:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'l.id' in 'field list'
+[Method: GET, Route: perhitungan/hasil/4]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 APPPATH\Controllers\Perhitungan.php(69): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+        l.id as id_lamaran,
+        l.status,
+        p.nama_pelamar as nama,
+        k.id_kriteria,
+        k.bobot,
+        k.atribut,
+        pen.nilai
+        FROM lamaran l
+        JOIN pelamar p ON p.id_pelamar = l.id_pelamar
+        JOIN penilaian pen ON pen.id_lamaran = l.id
+        JOIN kriteria k ON k.id_kriteria = pen.id_kriteria
+        WHERE l.id_lowongan = 4
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index('4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:47:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'l.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+        l.id as id_lamaran,
+        l.status,
+        p.nama_pelamar as nama,
+        k.id_kriteria,
+        k.bobot,
+        k.atribut,
+        pen.nilai
+        FROM lamaran l
+        JOIN pelamar p ON p.id_pelamar = l.id_pelamar
+        JOIN penilaian pen ON pen.id_lamaran = l.id
+        JOIN kriteria k ON k.id_kriteria = pen.id_kriteria
+        WHERE l.id_lowongan = 4
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+        l.id as id_lamaran,
+        l.status,
+        p.nama_pelamar as nama,
+        k.id_kriteria,
+        k.bobot,
+        k.atribut,
+        pen.nilai
+        FROM lamaran l
+        JOIN pelamar p ON p.id_pelamar = l.id_pelamar
+        JOIN penilaian pen ON pen.id_lamaran = l.id
+        JOIN kriteria k ON k.id_kriteria = pen.id_kriteria
+        WHERE l.id_lowongan = 4
+        ')
+ 3 APPPATH\Controllers\Perhitungan.php(69): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+        l.id as id_lamaran,
+        l.status,
+        p.nama_pelamar as nama,
+        k.id_kriteria,
+        k.bobot,
+        k.atribut,
+        pen.nilai
+        FROM lamaran l
+        JOIN pelamar p ON p.id_pelamar = l.id_pelamar
+        JOIN penilaian pen ON pen.id_lamaran = l.id
+        JOIN kriteria k ON k.id_kriteria = pen.id_kriteria
+        WHERE l.id_lowongan = 4
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index('4')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-13 07:47:05 --> [Caused by] mysqli_sql_exception: Unknown column 'l.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+        SELECT 
+        l.id as id_lamaran,
+        l.status,
+        p.nama_pelamar as nama,
+        k.id_kriteria,
+        k.bobot,
+        k.atribut,
+        pen.nilai
+        FROM lamaran l
+        JOIN pelamar p ON p.id_pelamar = l.id_pelamar
+        JOIN penilaian pen ON pen.id_lamaran = l.id
+        JOIN kriteria k ON k.id_kriteria = pen.id_kriteria
+        WHERE l.id_lowongan = 4
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+        l.id as id_lamaran,
+        l.status,
+        p.nama_pelamar as nama,
+        k.id_kriteria,
+        k.bobot,
+        k.atribut,
+        pen.nilai
+        FROM lamaran l
+        JOIN pelamar p ON p.id_pelamar = l.id_pelamar
+        JOIN penilaian pen ON pen.id_lamaran = l.id
+        JOIN kriteria k ON k.id_kriteria = pen.id_kriteria
+        WHERE l.id_lowongan = 4
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+        l.id as id_lamaran,
+        l.status,
+        p.nama_pelamar as nama,
+        k.id_kriteria,
+        k.bobot,
+        k.atribut,
+        pen.nilai
+        FROM lamaran l
+        JOIN pelamar p ON p.id_pelamar = l.id_pelamar
+        JOIN penilaian pen ON pen.id_lamaran = l.id
+        JOIN kriteria k ON k.id_kriteria = pen.id_kriteria
+        WHERE l.id_lowongan = 4
+        ')
+ 4 APPPATH\Controllers\Perhitungan.php(69): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+        l.id as id_lamaran,
+        l.status,
+        p.nama_pelamar as nama,
+        k.id_kriteria,
+        k.bobot,
+        k.atribut,
+        pen.nilai
+        FROM lamaran l
+        JOIN pelamar p ON p.id_pelamar = l.id_pelamar
+        JOIN penilaian pen ON pen.id_lamaran = l.id
+        JOIN kriteria k ON k.id_kriteria = pen.id_kriteria
+        WHERE l.id_lowongan = 4
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index('4')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-13 07:47:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 09:03:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 09:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 09:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 09:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

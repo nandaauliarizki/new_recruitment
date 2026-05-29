@@ -1,0 +1,1152 @@
+CRITICAL - 2026-04-05 12:24:45 --> TypeError: Unsupported operand types: string / string
+[Method: GET, Route: perhitungan]
+in APPPATH\Controllers\Perhitungan.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-05 12:27:05 --> TypeError: Unsupported operand types: string / string
+[Method: GET, Route: perhitungan]
+in APPPATH\Controllers\Perhitungan.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-05 12:45:54 --> Unknown column 'p.nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 4 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-05 12:45:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'p.nama' in 'field list'
+[Method: GET, Route: perhitungan]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-05 12:45:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'p.nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 3 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-05 12:45:54 --> [Caused by] mysqli_sql_exception: Unknown column 'p.nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 4 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-05 12:57:04 --> Unknown column 'p.nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 4 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-05 12:57:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'p.nama' in 'field list'
+[Method: GET, Route: perhitungan]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-05 12:57:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'p.nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 3 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-05 12:57:04 --> [Caused by] mysqli_sql_exception: Unknown column 'p.nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 4 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-05 12:57:12 --> Unknown column 'p.nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 4 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-05 12:57:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'p.nama' in 'field list'
+[Method: GET, Route: perhitungan]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-05 12:57:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'p.nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 3 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-05 12:57:12 --> [Caused by] mysqli_sql_exception: Unknown column 'p.nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 4 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama,
+                k.id as id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-05 13:01:00 --> Unknown column 'p.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 4 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-05 13:01:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'p.id' in 'on clause'
+[Method: GET, Route: perhitungan]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-05 13:01:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'p.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 3 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-05 13:01:00 --> [Caused by] mysqli_sql_exception: Unknown column 'p.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 4 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-05 13:01:01 --> Unknown column 'p.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 4 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-05 13:01:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'p.id' in 'on clause'
+[Method: GET, Route: perhitungan]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-05 13:01:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'p.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 3 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-05 13:01:01 --> [Caused by] mysqli_sql_exception: Unknown column 'p.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 4 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-05 13:01:04 --> Unknown column 'p.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 4 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-05 13:01:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'p.id' in 'on clause'
+[Method: GET, Route: perhitungan]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-05 13:01:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'p.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 3 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-05 13:01:04 --> [Caused by] mysqli_sql_exception: Unknown column 'p.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 4 APPPATH\Controllers\Perhitungan.php(12): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id as id_lamaran,
+                p.nama_pelamar as nama,
+                k.id_kriteria,
+                k.bobot,
+                k.atribut,
+                pen.nilai
+            FROM lamaran l
+            JOIN pelamar p ON p.id = l.id_pelamar
+            JOIN penilaian pen ON pen.id_lamaran = l.id
+            JOIN kriteria k ON k.id = pen.id_kriteria
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Perhitungan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

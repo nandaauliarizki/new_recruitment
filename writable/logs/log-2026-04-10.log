@@ -1,0 +1,479 @@
+DEBUG - 2026-04-10 00:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 00:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 00:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 00:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 00:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 00:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 00:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 00:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 00:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 00:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 00:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 03:41:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 03:41:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 03:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 03:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 03:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 03:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 04:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 04:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-10 04:00:51 --> Unknown column 'lowongan.nama_posisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', [], false)
+ 5 APPPATH\Controllers\Lamaran.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->status()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-10 04:00:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lowongan.nama_posisi' in 'field list'
+[Method: GET, Route: lamaran/status]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', [], false)
+ 2 APPPATH\Controllers\Lamaran.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->status()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-10 04:00:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lowongan.nama_posisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', [], false)
+ 4 APPPATH\Controllers\Lamaran.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->status()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-10 04:00:51 --> [Caused by] mysqli_sql_exception: Unknown column 'lowongan.nama_posisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', [], false)
+ 5 APPPATH\Controllers\Lamaran.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->status()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-10 04:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 04:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-10 04:01:06 --> Unknown column 'lowongan.nama_posisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', [], false)
+ 5 APPPATH\Controllers\Lamaran.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->status()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-10 04:01:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lowongan.nama_posisi' in 'field list'
+[Method: GET, Route: lamaran/status]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', [], false)
+ 2 APPPATH\Controllers\Lamaran.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->status()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-10 04:01:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lowongan.nama_posisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', [], false)
+ 4 APPPATH\Controllers\Lamaran.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->status()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-10 04:01:06 --> [Caused by] mysqli_sql_exception: Unknown column 'lowongan.nama_posisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', [], false)
+ 5 APPPATH\Controllers\Lamaran.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->status()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-10 04:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 04:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 04:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 04:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 04:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 04:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-10 04:01:34 --> Unknown column 'lowongan.nama_posisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', [], false)
+ 5 APPPATH\Controllers\Lamaran.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->status()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-10 04:01:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lowongan.nama_posisi' in 'field list'
+[Method: GET, Route: lamaran/status]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', [], false)
+ 2 APPPATH\Controllers\Lamaran.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->status()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-10 04:01:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lowongan.nama_posisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', [], false)
+ 4 APPPATH\Controllers\Lamaran.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->status()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-10 04:01:34 --> [Caused by] mysqli_sql_exception: Unknown column 'lowongan.nama_posisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', [], false)
+ 5 APPPATH\Controllers\Lamaran.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->status()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-10 15:28:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:28:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:47:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-10 15:47:52 --> Unknown column 'lowongan.nama_posisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', [], false)
+ 5 APPPATH\Controllers\Lamaran.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->status()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-10 15:47:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lowongan.nama_posisi' in 'field list'
+[Method: GET, Route: lamaran/status]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', [], false)
+ 2 APPPATH\Controllers\Lamaran.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->status()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-10 15:47:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lowongan.nama_posisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', [], false)
+ 4 APPPATH\Controllers\Lamaran.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->status()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-10 15:47:52 --> [Caused by] mysqli_sql_exception: Unknown column 'lowongan.nama_posisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', [], false)
+ 5 APPPATH\Controllers\Lamaran.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->status()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-10 15:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 15:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 16:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 16:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-10 16:04:02 --> Unknown column 'lowongan.nama_posisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', [], false)
+ 5 APPPATH\Controllers\Lamaran.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->status()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-10 16:04:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lowongan.nama_posisi' in 'field list'
+[Method: GET, Route: lamaran/status]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', [], false)
+ 2 APPPATH\Controllers\Lamaran.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->status()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-10 16:04:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lowongan.nama_posisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', [], false)
+ 4 APPPATH\Controllers\Lamaran.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->status()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-10 16:04:02 --> [Caused by] mysqli_sql_exception: Unknown column 'lowongan.nama_posisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `lamaran`.*, `lowongan`.`nama_posisi`
+FROM `lamaran`
+JOIN `lowongan` ON `lowongan`.`id_lowongan` = `lamaran`.`id_lowongan`
+WHERE `lamaran`.`id_pelamar` IS NULL', [], false)
+ 5 APPPATH\Controllers\Lamaran.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Lamaran->status()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lamaran))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-10 16:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-10 16:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

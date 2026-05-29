@@ -1,0 +1,675 @@
+DEBUG - 2026-05-21 03:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-21 03:08:34 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'erecruitment' in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('erecruitment_db', 'root', Object(SensitiveParameterValue), 'erecruitment', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/html/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /var/www/html/app/Controllers/Auth.php(31): CodeIgniter\BaseModel->first()
+#7 /var/www/html/system/CodeIgniter.php(951): App\Controllers\Auth->prosesLogin()
+#8 /var/www/html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 /var/www/html/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /var/www/html/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'erecruitment' in /var/www/html/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /var/www/html/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /var/www/html/app/Controllers/Auth.php(31): CodeIgniter\BaseModel->first()
+#6 /var/www/html/system/CodeIgniter.php(951): App\Controllers\Auth->prosesLogin()
+#7 /var/www/html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 /var/www/html/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /var/www/html/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2026-05-21 03:08:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'erecruitment'
+[Method: POST, Route: login/proses]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Auth.php(31): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Auth->prosesLogin()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-21 03:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-21 03:12:17 --> Unknown column 'end_date' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 4 APPPATH/Controllers/Dashboard.php(28): CodeIgniter\Database\BaseConnection->query('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-21 03:12:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'end_date' in 'where clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 724.
+ 1 APPPATH/Controllers/Dashboard.php(28): CodeIgniter\Database\BaseConnection->query('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-21 03:12:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'end_date' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 3 APPPATH/Controllers/Dashboard.php(28): CodeIgniter\Database\BaseConnection->query('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-21 03:12:17 --> [Caused by] mysqli_sql_exception: Unknown column 'end_date' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 4 APPPATH/Controllers/Dashboard.php(28): CodeIgniter\Database\BaseConnection->query('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-21 03:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-21 03:14:30 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 4 APPPATH/Controllers/Dashboard.php(28): CodeIgniter\Database\BaseConnection->query('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-21 03:14:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 724.
+ 1 APPPATH/Controllers/Dashboard.php(28): CodeIgniter\Database\BaseConnection->query('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-21 03:14:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 3 APPPATH/Controllers/Dashboard.php(28): CodeIgniter\Database\BaseConnection->query('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-21 03:14:30 --> [Caused by] mysqli_sql_exception: Unknown column 'status' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 4 APPPATH/Controllers/Dashboard.php(28): CodeIgniter\Database\BaseConnection->query('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-21 03:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-21 03:16:17 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 4 APPPATH/Controllers/Dashboard.php(28): CodeIgniter\Database\BaseConnection->query('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-21 03:16:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 724.
+ 1 APPPATH/Controllers/Dashboard.php(28): CodeIgniter\Database\BaseConnection->query('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-21 03:16:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 3 APPPATH/Controllers/Dashboard.php(28): CodeIgniter\Database\BaseConnection->query('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-21 03:16:17 --> [Caused by] mysqli_sql_exception: Unknown column 'status' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 4 APPPATH/Controllers/Dashboard.php(28): CodeIgniter\Database\BaseConnection->query('UPDATE lowongan SET status=\'expired\' WHERE end_date IS NOT NULL AND end_date < CURDATE() AND status = \'active\'')
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-21 03:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-21 03:42:42 --> Unknown column 'l.start_date' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN :l.status:
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC', [...], false)
+ 5 APPPATH/Controllers/Dashboard.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-21 03:42:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'l.start_date' in 'field list'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 724.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN :l.status:
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC', [...], false)
+ 2 APPPATH/Controllers/Dashboard.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-21 03:42:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'l.start_date' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC')
+ 2 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN :l.status:
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC', [...], false)
+ 4 APPPATH/Controllers/Dashboard.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-21 03:42:42 --> [Caused by] mysqli_sql_exception: Unknown column 'l.start_date' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN :l.status:
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC', [...], false)
+ 5 APPPATH/Controllers/Dashboard.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-21 03:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-21 03:42:46 --> Unknown column 'l.start_date' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN :l.status:
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC', [...], false)
+ 5 APPPATH/Controllers/Dashboard.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-21 03:42:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'l.start_date' in 'field list'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 724.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN :l.status:
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC', [...], false)
+ 2 APPPATH/Controllers/Dashboard.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-21 03:42:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'l.start_date' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC')
+ 2 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN :l.status:
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC', [...], false)
+ 4 APPPATH/Controllers/Dashboard.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-21 03:42:46 --> [Caused by] mysqli_sql_exception: Unknown column 'l.start_date' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN :l.status:
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC', [...], false)
+ 5 APPPATH/Controllers/Dashboard.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-21 03:43:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-21 03:43:19 --> Unknown column 'l.start_date' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN :l.status:
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC', [...], false)
+ 5 APPPATH/Controllers/Dashboard.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-21 03:43:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'l.start_date' in 'field list'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 724.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN :l.status:
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC', [...], false)
+ 2 APPPATH/Controllers/Dashboard.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-21 03:43:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'l.start_date' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC')
+ 2 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN :l.status:
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC', [...], false)
+ 4 APPPATH/Controllers/Dashboard.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-21 03:43:19 --> [Caused by] mysqli_sql_exception: Unknown column 'l.start_date' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN (\'active\',\'draft\')
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `l`.`id`, `l`.`nama_pekerjaan`, `l`.`start_date`, `l`.`end_date`, `l`.`status`, COUNT(lm.id_lamaran) as total_applicants
+FROM `lowongan` `l`
+LEFT JOIN `lamaran` `lm` ON `lm`.`id_lowongan` = `l`.`id`
+WHERE `l`.`status` IN :l.status:
+GROUP BY `l`.`id`
+ORDER BY `l`.`end_date` ASC', [...], false)
+ 5 APPPATH/Controllers/Dashboard.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-21 03:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:49:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:51:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 03:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 05:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 05:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 05:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 05:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 05:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 05:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 05:58:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 05:58:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 05:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 05:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 05:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 05:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 05:59:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 05:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 05:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:00:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:00:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:07:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:07:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:07:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:07:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-21 06:07:50 --> DivisionByZeroError: Division by zero
+[Method: GET, Route: perhitungan/hasil/8]
+in APPPATH/Controllers/Perhitungan.php on line 122.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Perhitungan->index('8')
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perhitungan))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-21 06:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:14:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:22:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:28:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:28:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:32:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:44:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:45:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 06:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 07:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 08:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 08:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 08:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 08:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 08:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 08:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 08:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 08:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 08:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 08:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 08:39:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 08:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 08:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-21 08:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

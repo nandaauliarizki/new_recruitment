@@ -1,0 +1,397 @@
+DEBUG - 2026-05-22 03:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 03:09:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 03:09:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 03:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-22 03:35:43 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for erecruitment_db failed: No such host is known.  in C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\Users\\LENOVO...', 201)
+#1 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('erecruitment_db', 'root', Object(SensitiveParameterValue), 'rekrutmen', 3306, '', 0)
+#2 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\BaseConnection.php(1565): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#5 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\BaseConnection.php(1585): CodeIgniter\Database\BaseConnection->listTables()
+#6 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#7 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#8 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#9 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#10 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#11 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#12 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#13 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#14 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for erecruitment_db failed: No such host is known.  in C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('erecruitment_db', 'root', Object(SensitiveParameterValue), 'rekrutmen', 3306, '', 0)
+#1 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\BaseConnection.php(1565): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\BaseConnection.php(1585): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#9 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#10 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#11 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#12 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#13 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for erecruitment_db failed: No such host is known.  in C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\BaseConnection.php(1565): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\BaseConnection.php(1585): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#8 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#9 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#12 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 C:\Users\LENOVO\Downloads\erecruitment-feature-improvements\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+DEBUG - 2026-05-22 03:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 03:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 03:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 03:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 03:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-22 03:41:01 --> Unknown column 'status_terakhir' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE   (
+`status` = \'diterima\'
+OR `status_lamaran` = \'diterima\'
+OR `status_terakhir` = \'diterima\'
+ )', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE   (
+`status` = \'diterima\'
+OR `status_lamaran` = \'diterima\'
+OR `status_terakhir` = \'diterima\'
+ )')
+ 3 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE   (
+`status` = \'diterima\'
+OR `status_lamaran` = \'diterima\'
+OR `status_terakhir` = \'diterima\'
+ )')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE   (
+`status` = :status:
+OR `status_lamaran` = :status_lamaran:
+OR `status_terakhir` = :status_terakhir:
+ )', [...], false)
+ 5 SYSTEMPATH/Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH/Controllers/Dashboard.php(38): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-22 03:41:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status_terakhir' in 'where clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 724.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE   (
+`status` = :status:
+OR `status_lamaran` = :status_lamaran:
+OR `status_terakhir` = :status_terakhir:
+ )', [...], false)
+ 2 SYSTEMPATH/Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH/Controllers/Dashboard.php(38): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-22 03:41:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status_terakhir' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE   (
+`status` = \'diterima\'
+OR `status_lamaran` = \'diterima\'
+OR `status_terakhir` = \'diterima\'
+ )')
+ 2 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE   (
+`status` = \'diterima\'
+OR `status_lamaran` = \'diterima\'
+OR `status_terakhir` = \'diterima\'
+ )')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE   (
+`status` = :status:
+OR `status_lamaran` = :status_lamaran:
+OR `status_terakhir` = :status_terakhir:
+ )', [...], false)
+ 4 SYSTEMPATH/Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH/Controllers/Dashboard.php(38): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-22 03:41:01 --> [Caused by] mysqli_sql_exception: Unknown column 'status_terakhir' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE   (
+`status` = \'diterima\'
+OR `status_lamaran` = \'diterima\'
+OR `status_terakhir` = \'diterima\'
+ )', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE   (
+`status` = \'diterima\'
+OR `status_lamaran` = \'diterima\'
+OR `status_terakhir` = \'diterima\'
+ )')
+ 3 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE   (
+`status` = \'diterima\'
+OR `status_lamaran` = \'diterima\'
+OR `status_terakhir` = \'diterima\'
+ )')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `lamaran`
+WHERE   (
+`status` = :status:
+OR `status_lamaran` = :status_lamaran:
+OR `status_terakhir` = :status_terakhir:
+ )', [...], false)
+ 5 SYSTEMPATH/Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH/Controllers/Dashboard.php(38): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-22 03:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 03:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 03:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 03:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 03:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 03:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 03:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 03:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 03:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 03:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 03:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 03:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:18:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:20:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-22 06:22:45 --> Unknown column 'no_telepon' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query('INSERT INTO `pelamar` (`nama_pelamar`, `email`, `no_telepon`, `tanggal_lahir`, `pendidikan`, `pengalaman`, `tanggal_lamar`, `status`, `id_user`) VALUES (\'amelia\', \'amel@gmail.com\', \'085754565455\', \'2026-05-22\', \'\', \'\', \'2026-05-22\', \'baru\', 15)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pelamar` (`nama_pelamar`, `email`, `no_telepon`, `tanggal_lahir`, `pendidikan`, `pengalaman`, `tanggal_lamar`, `status`, `id_user`) VALUES (\'amelia\', \'amel@gmail.com\', \'085754565455\', \'2026-05-22\', \'\', \'\', \'2026-05-22\', \'baru\', 15)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pelamar` (`nama_pelamar`, `email`, `no_telepon`, `tanggal_lahir`, `pendidikan`, `pengalaman`, `tanggal_lamar`, `status`, `id_user`) VALUES (\'amelia\', \'amel@gmail.com\', \'085754565455\', \'2026-05-22\', \'\', \'\', \'2026-05-22\', \'baru\', 15)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pelamar` (`nama_pelamar`, `email`, `no_telepon`, `tanggal_lahir`, `pendidikan`, `pengalaman`, `tanggal_lamar`, `status`, `id_user`) VALUES (:nama_pelamar:, :email:, :no_telepon:, :tanggal_lahir:, :pendidikan:, :pengalaman:, :tanggal_lamar:, :status:, :id_user:)', [...], false)
+ 5 SYSTEMPATH/Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(665): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Auth.php(105): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Auth->prosesRegister()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-22 06:22:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'no_telepon' in 'field list'
+[Method: POST, Route: register/proses]
+in SYSTEMPATH/Database/BaseConnection.php on line 724.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pelamar` (`nama_pelamar`, `email`, `no_telepon`, `tanggal_lahir`, `pendidikan`, `pengalaman`, `tanggal_lamar`, `status`, `id_user`) VALUES (:nama_pelamar:, :email:, :no_telepon:, :tanggal_lahir:, :pendidikan:, :pengalaman:, :tanggal_lamar:, :status:, :id_user:)', [...], false)
+ 2 SYSTEMPATH/Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(665): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Auth.php(105): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Auth->prosesRegister()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-22 06:22:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'no_telepon' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 310.
+ 1 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pelamar` (`nama_pelamar`, `email`, `no_telepon`, `tanggal_lahir`, `pendidikan`, `pengalaman`, `tanggal_lamar`, `status`, `id_user`) VALUES (\'amelia\', \'amel@gmail.com\', \'085754565455\', \'2026-05-22\', \'\', \'\', \'2026-05-22\', \'baru\', 15)')
+ 2 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pelamar` (`nama_pelamar`, `email`, `no_telepon`, `tanggal_lahir`, `pendidikan`, `pengalaman`, `tanggal_lamar`, `status`, `id_user`) VALUES (\'amelia\', \'amel@gmail.com\', \'085754565455\', \'2026-05-22\', \'\', \'\', \'2026-05-22\', \'baru\', 15)')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pelamar` (`nama_pelamar`, `email`, `no_telepon`, `tanggal_lahir`, `pendidikan`, `pengalaman`, `tanggal_lamar`, `status`, `id_user`) VALUES (:nama_pelamar:, :email:, :no_telepon:, :tanggal_lahir:, :pendidikan:, :pengalaman:, :tanggal_lamar:, :status:, :id_user:)', [...], false)
+ 4 SYSTEMPATH/Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH/Model.php(665): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH/Controllers/Auth.php(105): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Auth->prosesRegister()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-22 06:22:45 --> [Caused by] mysqli_sql_exception: Unknown column 'no_telepon' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 300.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(300): mysqli->query('INSERT INTO `pelamar` (`nama_pelamar`, `email`, `no_telepon`, `tanggal_lahir`, `pendidikan`, `pengalaman`, `tanggal_lamar`, `status`, `id_user`) VALUES (\'amelia\', \'amel@gmail.com\', \'085754565455\', \'2026-05-22\', \'\', \'\', \'2026-05-22\', \'baru\', 15)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pelamar` (`nama_pelamar`, `email`, `no_telepon`, `tanggal_lahir`, `pendidikan`, `pengalaman`, `tanggal_lamar`, `status`, `id_user`) VALUES (\'amelia\', \'amel@gmail.com\', \'085754565455\', \'2026-05-22\', \'\', \'\', \'2026-05-22\', \'baru\', 15)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pelamar` (`nama_pelamar`, `email`, `no_telepon`, `tanggal_lahir`, `pendidikan`, `pengalaman`, `tanggal_lamar`, `status`, `id_user`) VALUES (\'amelia\', \'amel@gmail.com\', \'085754565455\', \'2026-05-22\', \'\', \'\', \'2026-05-22\', \'baru\', 15)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pelamar` (`nama_pelamar`, `email`, `no_telepon`, `tanggal_lahir`, `pendidikan`, `pengalaman`, `tanggal_lamar`, `status`, `id_user`) VALUES (:nama_pelamar:, :email:, :no_telepon:, :tanggal_lahir:, :pendidikan:, :pengalaman:, :tanggal_lamar:, :status:, :id_user:)', [...], false)
+ 5 SYSTEMPATH/Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(665): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Auth.php(105): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Auth->prosesRegister()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-22 06:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-22 06:27:43 --> Error: Call to undefined method CodeIgniter\Validation\Validation::setErrors()
+[Method: GET, Route: register]
+in APPPATH/Controllers/Auth.php on line 56.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Auth->register()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-22 06:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:29:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:30:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:31:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:32:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:47:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:49:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:53:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 06:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:27:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:34:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 08:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 09:00:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 09:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 09:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 09:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-22 09:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
