@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Dashboard Pelamar</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        rel="stylesheet"
+    >
 
     <style>
 
@@ -14,52 +26,34 @@
             overflow-x: hidden;
         }
 
-        /* LAYOUT FLEX */
+        /* ======================
+           LAYOUT
+        ====================== */
 
         .wrapper {
             display: flex;
         }
 
-        /* SIDEBAR */
-
-        /*.sidebar {
-            width: 220px;
-            height: 100vh;
-            background-color: #0d6efd;
-            color: white;
-            padding-top: 20px;
-
-            transition: all 0.3s;
-        }
-
-        .sidebar a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            display: block;
-        }
-
-        .sidebar a:hover {
-            background-color: rgba(255,255,255,0.2);
-        }
-
-        /* Saat Sidebar Ditutup */
-
-        .sidebar.hide {
-            margin-left: -220px;
-        }
-
-        /* MAIN CONTENT */
-
         .main-content {
             flex: 1;
-            transition: all 0.3s;
         }
 
-        /* TOPBAR */
+        .content {
+            padding: 100px 20px 20px;
+        }
+
+        /* ======================
+           TOPBAR
+        ====================== */
 
         .topbar {
-            background-color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+
+            background-color: #ffffff;
             padding: 15px 30px;
             border-bottom: 1px solid #ddd;
 
@@ -67,248 +61,186 @@
             align-items: center;
             justify-content: space-between;
         }
-        .nav-link-custom{
 
-        color:#666;
-
-        text-decoration:none;
-
-        font-weight:500;
-
-        position:relative;
-
-        padding-bottom:6px;
-
-        transition:0.3s;
-    }
-
-    .nav-link-custom:hover{
-
-        color:#d4a017;
-    }
-
-    .nav-link-custom.active{
-
-        color:#d4a017;
-
-        font-weight:600;
-    }
-
-    .nav-link-custom.active::after{
-
-        content:'';
-
-        position:absolute;
-
-        bottom:0;
-        left:0;
-
-        width:100%;
-        height:3px;
-
-        background:#d4a017;
-
-        border-radius:20px;
-    }
-
-    .profile-avatar{
-
-        width:40px;
-
-        height:40px;
-
-        border-radius:50%;
-
-        background:#ffc107;
-
-        display:flex;
-
-        align-items:center;
-
-        justify-content:center;
-
-        font-weight:700;
-
-        color:#222;
-    }
-
-        .content {
-            padding: 20px;
+        .welcome-box {
+            margin: -20px -20px 20px -20px;
         }
+
+        /* ======================
+           NAVIGATION
+        ====================== */
+
+        .nav-link-custom {
+            color: #666;
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            padding-bottom: 6px;
+            transition: 0.3s;
+        }
+
+        .nav-link-custom:hover {
+            color: #d4a017;
+        }
+
+        .nav-link-custom.active {
+            color: #d4a017;
+            font-weight: 600;
+        }
+
+        .nav-link-custom.active::after {
+            content: '';
+
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            width: 100%;
+            height: 3px;
+
+            background: #d4a017;
+            border-radius: 20px;
+        }
+
+        /* ======================
+           PROFILE
+        ====================== */
+
+        .profile-avatar {
+            width: 42px;
+            height: 42px;
+
+            border-radius: 50%;
+            background: #ffc107;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-weight: 700;
+            color: #222;
+        }
+
+        .profile-image {
+            width: 42px;
+            height: 42px;
+
+            border-radius: 50%;
+            object-fit: cover;
+
+            border: 2px solid #ffc107;
+        }
+
+        /* ======================
+           BUTTON
+        ====================== */
 
         .btn-primary {
             border-radius: 30px;
             padding: 8px 18px;
         }
 
+        /* ======================
+           TABLE
+        ====================== */
+
         .table-hover tbody tr:hover {
             background-color: #f2f6ff;
         }
 
-        /* Tombol Toggle */
-
-        #toggleSidebar {
-            margin-right: 10px;
-        }
-
     </style>
-
 </head>
 
 <body>
 
-<div class="wrapper">
+    <?php $uri = service('uri'); ?>
 
-    <!-- SIDEBAR -->
-    <!-- <div class="sidebar" id="sidebar">
+    <div class="wrapper">
 
-        <h4 class="text-center mb-4">
-            Pelamar
-        </h4>
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
 
-        <a href="<?= base_url('pelamar/dashboard') ?>">
-            Dashboard
-        </a>
+            <!-- TOPBAR -->
+            <div class="topbar">
 
-        <a href="<?= base_url('lowongan') ?>">
-            Lowongan
-        </a>
+                <!-- KOSONG KIRI -->
+                <div style="width: 120px;"></div>
 
-        <a href="<?= base_url('lamaran/status') ?>">
-            Lamaran Saya
-        </a>
+                <!-- MENU -->
+                <div class="d-flex align-items-center gap-4">
 
-        <a href="<?= base_url('pelamar/profil') ?>">
-            Profil
-        </a>
+                    <a
+                        href="<?= base_url('pelamar/dashboard') ?>"
+                        class="nav-link-custom <?= ($uri->getSegment(2) == 'dashboard') ? 'active' : '' ?>"
+                    >
+                        Home
+                    </a>
 
-        <a href="<?= base_url('logout') ?>">
-            Logout
-        </a>
+                    <a
+                        href="<?= base_url('lamaran/status') ?>"
+                        class="nav-link-custom <?= ($uri->getSegment(1) == 'lamaran') ? 'active' : '' ?>"
+                    >
+                        My Applications
+                    </a>
 
-    </div> -->
+                </div>
 
-    <!-- MAIN -->
-    <div class="main-content">
+                <!-- PROFILE -->
+                <div class="d-flex align-items-center gap-3">
 
-       <!-- TOPBAR -->
+                    <!-- LOGOUT -->
+                    <a
+                        href="<?= base_url('logout') ?>"
+                        class="btn btn-outline-warning btn-sm"
+                    >
+                        Logout
+                    </a>
 
-        <div class="topbar">
+                    <!-- PROFILE BUTTON -->
+                    <a
+                        href="<?= base_url('pelamar/profile') ?>"
+                        class="text-decoration-none"
+                    >
 
-            <!-- KOSONG KIRI -->
-            <div style="width:120px;"></div>
+                        <?php if (session()->get('foto')): ?>
 
-            <!-- MENU TENGAH -->
-            <div class="d-flex align-items-center gap-4">
+                            <img
+                                src="<?= base_url('uploads/profile/' . session()->get('foto')) ?>"
+                                class="profile-image"
+                            >
 
-                <?php $uri = service('uri'); ?>
+                        <?php else: ?>
 
-            <div class="d-flex align-items-center gap-4">
+                            <div class="profile-avatar">
 
-                <a
-                    href="<?= base_url('pelamar/dashboard') ?>"
-                    class="nav-link-custom <?= ($uri->getSegment(2) == 'dashboard') ? 'active' : '' ?>"
-                >
-                    Home
-                </a>
+                                <?= strtoupper(
+                                    substr(
+                                        session()->get('nama'),
+                                        0,
+                                        1
+                                    )
+                                ) ?>
 
-                <a
-                    href="<?= base_url('lamaran/status') ?>"
-                    class="nav-link-custom <?= ($uri->getSegment(1) == 'lamaran') ? 'active' : '' ?>"
-                >
-                    My Applications
-                </a>
+                            </div>
 
-            </div>
+                        <?php endif; ?>
 
-                <!-- <a
-                    href="<?= base_url('lamaran/status') ?>"
-                    class="nav-link-custom"
-                >
-                    My Applications
-                </a> -->
-
-            </div>
-
-            <!-- PROFILE KANAN -->
-             
-            <div class="d-flex align-items-center gap-3">
-
-                <!-- LOGOUT -->
-                <a
-                    href="<?= base_url('logout') ?>"
-                    class="btn btn-outline-warning btn-sm"
-                >
-                    Logout
-                </a>
-
-                <!-- PROFILE AVATAR -->
-                <a
-                    href="<?= base_url('pelamar/profile') ?>"
-                    class="text-decoration-none"
-                >
-
-                    <?php if(session()->get('foto')): ?>
-
-                        <img
-                            src="<?= base_url('uploads/profile/' . session()->get('foto')) ?>"
-                            width="42"
-                            height="42"
-                            style="
-                                border-radius:50%;
-                                object-fit:cover;
-                                border:2px solid #ffc107;
-                            "
-                        >
-
-                    <?php else: ?>
-
-                        <div class="profile-avatar">
-
-                            <?= strtoupper(
-                                substr(
-                                    session()->get('nama'),
-                                    0,
-                                    1
-                                )
-                            ) ?>
-
-                        </div>
-
-                    <?php endif; ?>
-
-                </a>
-
-            </div>
-
-                    </div>
-
-                    <!-- CONTENT -->
-                    <div class="content">
-
-                        <?= $this->renderSection('content') ?>
-
-                    </div>
+                    </a>
 
                 </div>
 
             </div>
 
-<!-- JAVASCRIPT -->
+            <!-- CONTENT -->
+            <div class="content">
 
-<script>
+                <?= $this->renderSection('content') ?>
 
-document
-.getElementById("toggleSidebar")
-.addEventListener("click", function () {
+            </div>
 
-    document
-    .getElementById("sidebar")
-    .classList.toggle("hide");
+        </div>
 
-});
-
-</script>
+    </div>
 
 </body>
 </html>

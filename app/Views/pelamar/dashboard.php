@@ -16,7 +16,7 @@
             #ffda6a
         );
 
-        border-radius:24px;
+        border-radius:0px;
 
         padding:40px;
 
