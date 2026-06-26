@@ -87,13 +87,15 @@ class PelamarProfile extends BaseController
         $confirmPassword = $this->request->getPost('confirm_password');
 
         // VALIDASI PASSWORD LAMA
-        if (!password_verify($oldPassword, $user['password'])) {
+        if (md5($oldPassword) !== $user['password']) {
 
             return redirect()->back()->with(
                 'error',
                 'Password lama salah'
             );
         }
+
+        
 
         // VALIDASI KONFIRMASI PASSWORD
         if ($newPassword != $confirmPassword) {
@@ -106,7 +108,7 @@ class PelamarProfile extends BaseController
 
         // UPDATE PASSWORD
         $this->userModel->update($id, [
-            'password' => password_hash($newPassword, PASSWORD_DEFAULT)
+            'password' => md5($newPassword)
         ]);
 
         return redirect()->back()->with(
