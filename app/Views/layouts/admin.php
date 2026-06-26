@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <script src="https://cdn.tailwindcss.com"></script>
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
 
     <style>
@@ -13,6 +13,22 @@
         'GRAD' 0,
         'opsz' 24
     }
+
+    .sidebar-collapsed{
+    width:80px !important;
+}
+
+.sidebar-collapsed .menu-text{
+    display:none;
+}
+
+.sidebar-collapsed .logo-text{
+    display:none;
+}
+
+.sidebar-collapsed a{
+    justify-content:center;
+}
 </style>
 
     <meta charset="UTF-8">
@@ -61,14 +77,16 @@
 <div class="flex min-h-screen">
 
     <!-- SIDEBAR -->
-    <aside class="hidden md:flex flex-col
-                  w-64
-                  bg-[#201b11]
-                  text-white
-                  p-4">
+    <aside id="sidebar"
+            class="flex flex-col
+                    w-64
+                    bg-[#201b11]
+                    text-white
+                    p-4
+                    transition-all duration-300">
 
         <!-- LOGO -->
-        <div class="mb-10">
+        <div class="mb-10 logo-text">
 
             <h2 class="text-2xl font-bold">
                 RecruitFlow
@@ -95,7 +113,9 @@
                     dashboard
                 </span>
 
-                Dashboard
+                <span class="menu-text">
+                    Dashboard
+                </span>
 
             </a>
 
@@ -111,7 +131,9 @@
                     work
                 </span>
 
-                Manage Jobs
+                <span class="menu-text">
+                    Manage Jobs
+                </span>
 
             </a>
 
@@ -127,7 +149,9 @@
                     leaderboard
                 </span>
 
-                Ranking SAW
+                <span class="menu-text">
+                    Ranking Kandidat
+                </span>
 
             </a>
 
@@ -143,7 +167,9 @@
                     groups
                 </span>
 
-                Manage Applicants
+                <span class="menu-text">
+                    Manage Applicants
+                </span>
 
             </a>
 
@@ -157,7 +183,17 @@
         <!-- TOPBAR -->
         <header class="bg-white border-b px-8 py-4">
 
-            <div class="flex justify-end items-center">
+            <div class="flex justify-between items-center">
+
+                 <!-- BUTTON SIDEBAR -->
+                <button id="toggleSidebar"
+                        class="btn border-0 shadow-none">
+
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+
+                </button>
 
                 <!-- PROFILE DROPDOWN -->
                 <div class="dropdown">
@@ -252,5 +288,19 @@
 <!-- BOOTSTRAP JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    const sidebar = document.getElementById('sidebar');
+    const btn = document.getElementById('toggleSidebar');
+
+    btn.addEventListener('click', function () {
+
+        sidebar.classList.toggle('sidebar-collapsed');
+
+    });
+
+});
+</script>
 </body>
 </html>

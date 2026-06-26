@@ -87,3 +87,4 @@ $routes->post('pelamar/profile/password', 'PelamarProfile::changePassword');
 $routes->get('pelamar/profile', 'Profile::index');
 $routes->post('pelamar/profile/update', 'Profile::update');
 $routes->post('pelamar/profile/change-password', 'Profile::changePassword');
+$routes->get('pelamar/cetak', 'Pelamar::cetak');

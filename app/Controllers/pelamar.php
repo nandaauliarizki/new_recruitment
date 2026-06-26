@@ -73,6 +73,21 @@ class Pelamar extends BaseController
             ->get()
             ->getResultArray();
 
+            if ($pelamar) {
+
+                foreach ($lowongan as &$l) {
+
+                    $cek = $db->table('lamaran')
+                        ->where('id_pelamar', $pelamar['id_pelamar'])
+                        ->where('id_lowongan', $l['id'])
+                        ->countAllResults();
+
+                    $l['sudah_melamar'] = ($cek > 0);
+                }
+
+                unset($l);
+            }
+
         return view('pelamar/dashboard', [
             'lowongan'      => $lowongan,
             'totalLowongan' => $totalLowongan,
@@ -233,6 +248,72 @@ class Pelamar extends BaseController
     {
         $data['lowongan'] = $this->lowongan->findAll();
         return view('pelamar/tambah', $data);
+    }
+
+    public function cetak()
+    {
+        helper('lamaran');
+
+        $db = \Config\Database::connect();
+
+        $builder = $db->table('lamaran');
+
+        $builder->select('
+            lamaran.*,
+            pelamar.nama_pelamar,
+            pelamar.email,
+            pelamar.pendidikan,
+            pelamar.tanggal_lamar,
+            pelamar.id_pelamar,
+            lowongan.nama_pekerjaan
+        ');
+
+        $builder->join(
+            'pelamar',
+            'pelamar.id_pelamar = lamaran.id_pelamar'
+        );
+
+        $builder->join(
+            'lowongan',
+            'lowongan.id = lamaran.id_lowongan'
+        );
+
+        // FILTER LOWONGAN
+        if ($id_lowongan = $this->request->getGet('lowongan')) {
+            $builder->where('lamaran.id_lowongan', $id_lowongan);
+        }
+
+        // FILTER STATUS
+        if ($status = $this->request->getGet('status')) {
+
+            $normalized = LamaranStatusService::normalize($status);
+
+            if (LamaranStatusService::isManageEligible($normalized)) {
+
+                $builder->groupStart();
+
+                foreach (LamaranStatusService::statusColumns($db) as $col) {
+
+                    $builder->orWhere(
+                        "lamaran.{$col}",
+                        $normalized
+                    );
+                }
+
+                $builder->groupEnd();
+            }
+        }
+
+        // FILTER NAMA
+        if ($keyword = $this->request->getGet('keyword')) {
+            $builder->like('pelamar.nama_pelamar', $keyword);
+        }
+
+        $data['pelamar'] = LamaranStatusService::filterManageRows(
+            $builder->get()->getResultArray()
+        );
+
+        return view('pelamar/cetak', $data);
     }
 
     public function simpan()

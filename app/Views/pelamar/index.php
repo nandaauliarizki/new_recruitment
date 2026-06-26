@@ -174,6 +174,17 @@
 
                 </a>
 
+                <a href="<?= base_url('pelamar/cetak') .
+                    '?lowongan=' . urlencode(request()->getGet('lowongan')) .
+                    '&status=' . urlencode(request()->getGet('status')) .
+                    '&keyword=' . urlencode(request()->getGet('keyword')) ?>"
+                    target="_blank"
+                    class="px-5 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
+                    
+                    Cetak
+
+                </a>
+
             </div>
 
         </form>
